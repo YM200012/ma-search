@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多智能体搜索平台</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>多智能体搜索平台</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="请输入搜索内容...">
+            <button id="search-button">搜索</button>
+        </div>
+        <div class="status-container">
+            <h2>处理流程</h2>
+            <div id="status-updates"></div>
+        </div>
+        <div class="agent-outputs-container">
+            <div class="agent-output">
+                <h3>主控智能体输出 (需求分析)</h3>
+                <div id="main-agent-output" class="output-box"></div>
+            </div>
+            <div class="agent-output">
+                <h3>检索智能体输出 </h3>
+                <div id="retrieval-agents-output" class="output-box"></div>
+            </div>
+            <div class="agent-output">
+                <h3>融合智能体输出 (总结)</h3>
+                <div id="fusion-agent-output" class="output-box"></div>
+            </div>
+        </div>
+
+        <div class="results-container">
+            <h2>最终结果</h2>
+            <div id="results"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
